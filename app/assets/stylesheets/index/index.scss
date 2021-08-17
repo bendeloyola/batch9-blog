@@ -1,0 +1,74 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: Georgia, sans-serif;
+  font-size: 5em;
+  letter-spacing: -2px;
+  color: #336B6B;
+}
+
+.table-new {
+  width: 50%;
+  border: solid 1px #DDEEEE;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+}
+.table-new thead th {
+  background-color: #DDEFEF;
+  border: solid 1px #DDEEEE;
+  color: #2ca8da;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
+}
+.table-new tbody td {
+  border: solid 1px #DDEEEE;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+.show a{
+  padding:6px 13px;
+  text-decoration: none;
+  background-color: #45c1d0;
+  border: none;
+  color: #ffff;
+}
+
+.edit a{
+  padding:6px 13px;
+  width: 50px;
+  text-decoration: none;
+  background-color: #F39C12;
+  border: none;
+  color: #ffff;
+}
+
+.delete a{
+  padding:6px 13px;
+  width: 50px;
+  text-decoration: none;
+  background-color: #de4a4a;
+  border: none;
+  color: #ffff;
+}
+
+.create-container{
+  margin: 20px;
+}
+
+.create-container a{
+  padding:6px 13px;
+  width: 50%;
+  text-decoration: none;
+  background-color: #27AE60;
+  border: none;
+  color: #ffff;
+}

@@ -1,5 +1,5 @@
 <%= form_with scope: :article, url: article_update_path, method: :put, locale: true do |a| %>
-  <div>
+  <div class="edit-article">
     <% if @article.errors.any? %>
       <ul>
         <% @article.errors.full_messages.each do |err| %>
@@ -20,5 +20,9 @@
   
   <div>
     <%= a.submit %>
+  </div>
+
+  <div>
+    <%= link_to "Back", articles_path%>
   </div>
 <% end %>
