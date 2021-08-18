@@ -9,20 +9,23 @@
       </ul>
     <% end %>
   </div>
+   
+  <div class="new-container">
+    <h1>Create New</h1>    
+    <div class="label-container">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
 
+    <div class="label-container">
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </div>
 
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <div class="btn-container">
+      <%= f.submit%>
+      <%= link_to "Back", articles_path%>   
+    </div>
   </div>
-
-  <div>
-    <%= f.label :body %>
-    <%= f.text_field :body %>
-  </div>
-
-  <div>
-    <%= f.submit%>
-  </div>
-  <%= link_to "Back", articles_path%>       
-  <% end %>
+    
+<% end %>

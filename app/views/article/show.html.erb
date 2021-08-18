@@ -1,10 +1,19 @@
-<table>
-  <tbody>
-    <tr>
-      <td><%= @article.id %></td>
-      <td><%= @article.name %></td>
-      <td><%= @article.body %></td>
-      <td><%= link_to "Back", articles_path%></td>
-    </tr>
-  </tbody>
-</table>
+
+
+
+<div class="show-container">
+    <h1>Show Article</h1>  
+    <div class="label-container">
+      <label>Name</label>
+      <input type="text" disabled value="<%= @article.name %>"/>
+    </div>
+    
+    <div class="label-container">
+      <label>Body</label>
+      <textarea disabled><%= @article.body %></textarea>
+    </div>
+    
+    <div class="btn-container">
+      <%= link_to "Back", articles_path%>
+    </div>
+  </div>

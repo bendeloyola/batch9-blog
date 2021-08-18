@@ -8,21 +8,22 @@
       </ul>
     <% end %>
   </div>
-  <div>
-    <%= a.label :name %>
-    <%= a.text_field :name %>
-  </div>
-  
-  <div>
-    <%= a.label :body %>
-    <%= a.text_field :body %>
-  </div>
-  
-  <div>
-    <%= a.submit %>
-  </div>
 
-  <div>
-    <%= link_to "Back", articles_path%>
+  <div class="edit-container">
+    <h1>Edit Article</h1>  
+    <div class="label-container">
+      <%= a.label :name %>
+      <%= a.text_field :name %>
+    </div>
+    
+    <div class="label-container">
+      <%= a.label :body %>
+      <%= a.text_area :body %>
+    </div>
+    
+    <div class="btn-container">
+      <%= a.submit %>
+      <%= link_to "Back", articles_path%>
+    </div>
   </div>
 <% end %>
