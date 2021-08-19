@@ -30,14 +30,22 @@ class ArticleController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
-    return redirect_to articles_path if @article.update(article_params)
-    render :edit
+    
+    if @article.update(article_params)
+      redirect_to articles_path
+    else
+      render :edit
+    end
   end
 
   def delete
     @article = Article.find(params[:id])
-    return redirect_to articles_path if @article.delete
-    render :index
+
+    if @article.delete
+      redirect_to articles_path
+    else
+      render :index
+    end
   end
 
   private

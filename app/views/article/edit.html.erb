@@ -9,15 +9,19 @@
     <% end %>
   </div>
 
-  <div class="edit-container">
-    <h1>Edit Article</h1>  
+  <div class="main-container">
+    <h1>Edit nanaman</h1>  
     <div class="label-container">
-      <%= a.label :name %>
+      <label>ID</label>
+      <input type="text" disabled value="<%= @article.id %>"/>
+    </div>
+    <div class="label-container">
+      <label>Name</label>
       <%= a.text_field :name %>
     </div>
     
     <div class="label-container">
-      <%= a.label :body %>
+      <label>Body</label>
       <%= a.text_area :body %>
     </div>
     
