@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # get '/articles' => 'articles#index'
+  root to: 'articles#index', as: 'articles'
   get '/articles/new' => 'articles#new', as: 'article_new'
   post '/articles' => 'articles#create', as: 'article_create'
   get '/articles/:id' => 'articles#show', as: 'article_show'
